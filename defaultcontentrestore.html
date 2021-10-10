@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Defaul content Restore</title>
+<script type="text/javascript">
+function test(){
+	x1=document.getElementsByName("n1")[0].value;
+	if(x1=="Your Email Address"){
+	document.getElementsByName("n1")[0].value="";
+	}
+}
+function test2(){
+	x1=document.getElementsByName("n1")[0].value;
+	if(x1==""){
+		document.getElementsByName("n1")[0].value="Your Email Address";
+	}
+		
+	}
+
+
+</script>
+</head>
+<body>
+<form  name="f1" >
+
+<input type="text" value="Your Email Address" name=n1 size="20" onfocus="test()" onblur="test2()">
+
+</form>
+
+
+</body>
+</html>
